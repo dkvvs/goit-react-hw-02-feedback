@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTipes from 'prop-types';
+import PropTypes from 'prop-types';
 import Notification from '../../components/Notification/Notification';
 import s from './Statistics.module.css';
 
@@ -21,12 +21,12 @@ const Statistics = ({ good, neutral, bad, total, positivePercentage }) => {
   );
 };
 
-Statistics.propTipes = {
-  good: PropTipes.number.isRequired,
-  neutral: PropTipes.number.isRequired,
-  bad: PropTipes.number.isRequired,
-  total: PropTipes.number.isRequired,
-  positivePercentage: PropTipes.number.isRequired,
+Statistics.propTypes = {
+  good: PropTypes.number.isRequired,
+  neutral: PropTypes.number.isRequired,
+  bad: PropTypes.number.isRequired,
+  total: PropTypes.number.isRequired,
+  positivePercentage: PropTypes.number.isRequired,
 };
 
 export default Statistics;
